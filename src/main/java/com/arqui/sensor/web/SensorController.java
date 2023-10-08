@@ -24,7 +24,7 @@ public class SensorController {
 
         return ResponseEntity.ok(time);    
     }
-    @GetMapping("a")
+    @GetMapping("all")
     public List<Sensor> getAll(){
         return (List<Sensor>) crud.findByOrderByIdsensorDesc();
     }
